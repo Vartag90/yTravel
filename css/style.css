@@ -1,0 +1,19 @@
+header {
+  background: #000;
+}
+
+body {
+  font-size: 20px;
+}
+
+body div {
+  color: pink;
+}
+
+h1 {
+  color: green;
+}
+
+.red {
+  text-decoration: line-through;
+}
