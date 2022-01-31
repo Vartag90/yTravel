@@ -6,12 +6,68 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title>Forms</title>
 </head>
 
 <body>
 
-	<h1>i'm at home</h1>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<div>
+			<p>Имя</p>
+			<input tabindex="1" type="text" name="username" placeholder="Имя">
+		</div>
+		<div>
+			<p>Пароль</p>
+			<input tabindex="2" type="password" name="userpassword" placeholder="">
+		</div>
+		<div>
+			<p>Телефон</p>
+			<input tabindex="3" type="tel" name="userphone" placeholder="">
+		</div>
+		<div>
+			<p>Пол</p>
+			<div>
+				<input tabindex="4" checked type="radio" name="gender" placeholder=""> Мужской
+			</div>
+			<div>
+				<input tabindex="4" type="radio" name="gender" placeholder=""> Женский
+			</div>
+		</div>
+		<div>
+			<p>Имущество</p>
+			<div>
+				<input tabindex="5" checked type="checkbox" name="bike" value="yes"> Велик
+			</div>
+			<div>
+				<input tabindex="6" type="checkbox" name="car" value="yes"> Машина
+			</div>
+			<div>
+				<input tabindex="7" type="checkbox" name="house" value="yes" disabled> Дом
+			</div>
+		</div>
+		<div>
+			<p>Дополнительная информация</p>
+			<textarea tabindex="8" name="addinfo"></textarea>
+		</div>
+		<div>
+			<p>Прикрепить фото</p>
+			<input tabindex="9" type="file" name="userphoto">
+		</div>
+		<div>
+			<p>Любимый цвет</p>
+			<select tabindex="10" name="color">
+				<option value="red">Красный</option>
+				<option value="green">Зеленый</option>
+				<option selected value="yellow">Желтый</option>
+			</select>
+		</div>
+		<div>
+			<p>Действия</p>
+			<button tabindex="11" type="submit">Отправить</button>
+			<button tabindex="12" type="reset">Очистить</button>
+		</div>
+
+	</form>
 
 
 
