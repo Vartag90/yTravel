@@ -482,7 +482,44 @@ header {
 		letter-spacing: 1.5px;
 	}
 }
-.btn {
+
+//==========================
+
+.why {
+}
+.why-top {
+	display: flex;
+	background: #000;
+	&__column {
+		flex: 0 0 50%;
+	}
+	&__text {
+		font-family: "Akzidenz-Grotesk";
+		font-size: 50px;
+		letter-spacing: 5px;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: right;
+		padding: 55px 60px 55px 60px;
+	}
+	&__image {
+		height: 100%;
+	}
+}
+
+.why-body {
+	&__column {
+	}
+}
+.why-body-item {
+	&__icon {
+	}
+}
+.why-body-item-body {
+	&__title {
+	}
+	&__text {
+	}
 }
 
 //==========================
