@@ -1,17 +1,19 @@
 'use strict';
 
-var imgSrc;
 
 (function (root) {
 
-	let parent = document.querySelector(root);
-	let img = parent.firstElementChild;
-	imgSrc = img.src;
-	img.classList.add('hidden');
+	let parents = document.querySelectorAll(root);
 
-	parent.style.backgroundImage = `url(/img/block_1/1.jpg)`;
-	parent.classList.add('imageFit');
+	for (const elem of parents) {
+		let img = elem.firstElementChild;
+		let imgSrc = img.src.startsWith('http') ? img.src.slice(-18) : img.src;
+		img.classList.add('hidden');
+
+		elem.style.backgroundImage = `url('${imgSrc}')`;
+		elem.classList.add('imageFit');
+	}
+
 
 })('.ibg')
 
-//console.log(imgSrc);
