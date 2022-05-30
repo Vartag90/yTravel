@@ -38,7 +38,6 @@ $ip5mx: 320px;
 //<breakpoints>
 
 $containerwidth: 870px;
-$margincenter: 0 auto;
 
 //</FONTS>
 
@@ -52,18 +51,9 @@ body {
 
 .container {
 	max-width: $containerwidth;
-	margin: $margincenter;
+	margin: 0 auto;
 	width: 100%;
 	padding: 0 15px;
-	// @media (max-width: $ip5mx) {
-	// 	width: 100%;
-	// }
-	// @media (max-width: $ppasmx) {
-	// 	width: 100%;
-	// }
-	// @media (max-width: $tasdmn) {
-	// 	max-width: 750px;
-	// }
 }
 
 //======<BUTTONS>=======
@@ -102,10 +92,8 @@ header {
 
 .header-top {
 	display: flex;
-	//border: 1px solid green;
 	justify-content: space-between;
 	&__link {
-		//border: 1px solid green;
 		position: relative;
 		z-index: 11;
 		font-family: "Akzidenz-Grotesk";
@@ -149,7 +137,6 @@ header {
 }
 
 .header-bottom {
-	//border: 1px solid red;
 	display: flex;
 	margin: 28px 0 0 0;
 	&__column {
@@ -173,8 +160,6 @@ header {
 
 .header-bottom-menu-list-1 {
 	display: flex;
-	//border: 1px solid red;
-
 	li:not(:last-child) {
 		margin: 0 45px 0 0;
 		@media (max-width: $tamdmn) {
@@ -193,7 +178,6 @@ header {
 
 .header-bottom-menu-list-2 {
 	display: flex;
-	//border: 1px solid red;
 	justify-content: flex-end;
 	li:not(:last-child) {
 		margin: 0 50px 0 0;
@@ -213,11 +197,9 @@ header {
 }
 
 .header-logo {
-	//border: 1px solid green;
 	position: relative;
 	z-index: 11;
 	display: block;
-	//border: 1px solid blue;
 	text-align: center;
 	margin: -42px 0 0 0;
 	&__text {
@@ -236,7 +218,6 @@ header {
 	}
 	&__image {
 		display: inline-block;
-		//border: 1px solid brown;
 	}
 	&__image img {
 		object-fit: contain;
@@ -261,7 +242,6 @@ header {
 }
 @media (max-width: 768px) {
 	.header-menu__icon {
-		//border: 1px solid green;
 		display: block;
 		position: absolute;
 		top: 42px;
@@ -500,7 +480,7 @@ header {
 		color: #fff;
 		text-transform: uppercase;
 		text-align: right;
-		padding: 55px 60px 55px 60px;
+		padding: 50px 60px 50px 0px;
 	}
 	&__image {
 		height: 100%;
@@ -508,17 +488,45 @@ header {
 }
 
 .why-body {
+	background: #ebebeb;
+	padding: 50px 0 0 0;
 	&__column {
+		flex: 0 0 50%;
+		padding: 0 0 50px 0;
 	}
 }
+
+.why-body-row {
+	display: flex;
+	flex-wrap: wrap;
+}
 .why-body-item {
+	display: flex;
 	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 100px;
+		height: 100px;
+		background-color: #000;
 	}
 }
 .why-body-item-body {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+	padding: 0 0 0 11px;
 	&__title {
+		flex: 1 1 auto;
+		font-family: "Akzidenz-Grotesk";
+		text-transform: uppercase;
+		font-size: 25px;
+		letter-spacing: 2.5px;
 	}
 	&__text {
+		font-size: 15px;
+		padding: 0 15px 0 0;
+		line-height: 1.67;
 	}
 }
 
