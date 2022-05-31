@@ -78,6 +78,36 @@ body {
 
 //======</BUTTONS>=======
 
+//======<INPUTS>=========
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.input {
+	border-radius: none;
+	width: 100%;
+	display: block;
+	padding: 0 18px;
+	height: 50px;
+	border: 2px solid #959595;
+	background-color: #252525;
+	font-size: 15px;
+	color: #959595;
+}
+
+textarea.input {
+	resize: none;
+	padding: 10px 18px;
+	height: 100px;
+}
+//======</INPUTS>========
+
 //======<HEADER>=======
 
 header {
@@ -465,13 +495,17 @@ header {
 
 //==========================
 
-.why {
-}
 .why-top {
 	display: flex;
 	background: #000;
 	&__column {
 		flex: 0 0 50%;
+		@media (max-width: $tamdmn) {
+			flex: 1 1 100%;
+			&:last-child {
+				display: none;
+			}
+		}
 	}
 	&__text {
 		font-family: "Akzidenz-Grotesk";
@@ -481,6 +515,15 @@ header {
 		text-transform: uppercase;
 		text-align: right;
 		padding: 50px 60px 50px 0px;
+		@media (max-width: $tamdmn) {
+			text-align: center;
+			font-size: 40px;
+			padding: 30px 0px;
+		}
+		@media (max-width: $tasdmn) {
+			font-size: 30px;
+			padding: 20px 0px;
+		}
 	}
 	&__image {
 		height: 100%;
@@ -490,9 +533,16 @@ header {
 .why-body {
 	background: #ebebeb;
 	padding: 50px 0 0 0;
+	@media (max-width: $tamdmn) {
+		padding: 25px 0 0 0;
+	}
 	&__column {
 		flex: 0 0 50%;
 		padding: 0 0 50px 0;
+		@media (max-width: $tamdmn) {
+			flex: 1 1 100%;
+			padding: 0 0 30px 0;
+		}
 	}
 }
 
@@ -522,14 +572,188 @@ header {
 		text-transform: uppercase;
 		font-size: 25px;
 		letter-spacing: 2.5px;
+		@media (max-width: $tamdmn) {
+			font-size: 20px;
+			flex: 0 0 auto;
+		}
+		@media (max-width: $tasdmn) {
+			margin: 0 0 6px 0;
+		}
 	}
 	&__text {
 		font-size: 15px;
 		padding: 0 15px 0 0;
 		line-height: 1.67;
+		@media (max-width: $tasdmn) {
+			line-height: 1.4;
+			padding: 0 5px 0 0;
+		}
 	}
 }
 
 //==========================
 
+.contacts {
+	padding: 70px 0 0 0;
+	@media (max-width: $tasdmn) {
+		padding: 30px 0 0 0;
+	}
+}
+
+.contacts-title {
+	font-family: "Akzidenz-Grotesk";
+	font-size: 50px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin: 0 0 30px 0;
+	@media (max-width: $tasdmn) {
+		font-size: 30px;
+		letter-spacing: 2px;
+		margin: 0 0 20px 0;
+	}
+}
+.contacts-body {
+	display: flex;
+	flex-wrap: wrap;
+	&__column {
+		flex: 0 0 50%;
+		margin: 0 0 20px 0;
+		@media (max-width: $tasdmn) {
+			flex: 1 1 100%;
+			margin: 0 0 15px 0;
+		}
+	}
+	&__item {
+		font-size: 15px;
+		line-height: 27px;
+		color: #000;
+		padding: 0 0 0 35px;
+		display: inline-block;
+	}
+	&__item--1 {
+		background: url("/img/block_4/1.svg") left no-repeat;
+	}
+	&__item--2 {
+		background: url("/img/block_4/2.svg") left no-repeat;
+	}
+	&__item--3 {
+		background: url("/img/block_4/3.svg") left no-repeat;
+	}
+}
+.contacts-social {
+	display: flex;
+	&__item {
+		margin: 0 30px 0 0;
+		&:last-child {
+			margin: 0 0 0 0;
+		}
+	}
+}
+.contacts-content {
+	display: flex;
+	background: #000;
+	@media (max-width: $tasdmn) {
+		display: block;
+	}
+	&__column {
+		flex: 0 0 50%;
+		position: relative;
+	}
+	&__map {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		iframe {
+			height: 100%;
+			width: 100%;
+		}
+		@media (max-width: $tasdmn) {
+			height: 300px;
+			position: relative;
+		}
+	}
+}
+.contacts-content-form {
+	padding: 55px 60px;
+	@media (max-width: $tasdmn) {
+		padding: 30px;
+	}
+	&__title {
+		font-family: "Akzidenz-Grotesk";
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 25px;
+		letter-spacing: 5px;
+		margin: 0 0 30px 0;
+	}
+}
+.contacts-content-form-body {
+	max-width: 375px;
+	@media (max-width: $tasdmn) {
+		max-width: none;
+	}
+}
+.contacts-content-form-line {
+	margin: 0 0 25px 0;
+}
+
 //======</MAIN BLOCK>=======
+
+//======<FOOTER>============
+
+.footer-body {
+	display: flex;
+	height: 125px;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: $tasdmn) {
+		flex-direction: column;
+		height: 100px;
+	}
+	@media (max-width: $ppasmx) {
+		height: 75px;
+	}
+	&__column {
+		flex: 0 0 50%;
+		@media (max-width: $tasdmn) {
+			&:first-child {
+				order: 2;
+			}
+			&:last-child {
+				order: 1;
+			}
+		}
+	}
+}
+.footer {
+	&__text {
+		font-size: 15px;
+		line-height: 25px;
+		color: #4d4d4d;
+		a {
+			text-decoration: underline;
+			color: #4d4d4d;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		@media (max-width: $tasdmn) {
+			text-align: center;
+		}
+	}
+	&__logo {
+		display: flex;
+		justify-content: end;
+		img {
+			object-fit: contain;
+			@media (max-width: $tasdmn) {
+				width: 150px;
+			}
+			@media (max-width: $ppasmx) {
+				width: 100px;
+			}
+		}
+	}
+}
+
+//======</FOOTER>===========

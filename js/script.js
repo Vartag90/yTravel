@@ -14,6 +14,5 @@
 		elem.classList.add('imageFit');
 	}
 
-
 })('.ibg')
 

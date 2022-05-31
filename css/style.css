@@ -127,6 +127,33 @@ body {
   color: #000;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input {
+  border-radius: none;
+  width: 100%;
+  display: block;
+  padding: 0 18px;
+  height: 50px;
+  border: 2px solid #959595;
+  background-color: #252525;
+  font-size: 15px;
+  color: #959595;
+}
+
+textarea.input {
+  resize: none;
+  padding: 10px 18px;
+  height: 100px;
+}
+
 header {
   padding: 29px 0 33px 0;
 }
@@ -702,6 +729,17 @@ header {
           flex: 0 0 50%;
 }
 
+@media (max-width: 992px) {
+  .why-top__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .why-top__column:last-child {
+    display: none;
+  }
+}
+
 .why-top__text {
   font-family: "Akzidenz-Grotesk";
   font-size: 50px;
@@ -710,6 +748,21 @@ header {
   text-transform: uppercase;
   text-align: right;
   padding: 50px 60px 50px 0px;
+}
+
+@media (max-width: 992px) {
+  .why-top__text {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-top__text {
+    font-size: 30px;
+    padding: 20px 0px;
+  }
 }
 
 .why-top__image {
@@ -721,11 +774,26 @@ header {
   padding: 50px 0 0 0;
 }
 
+@media (max-width: 992px) {
+  .why-body {
+    padding: 25px 0 0 0;
+  }
+}
+
 .why-body__column {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   padding: 0 0 50px 0;
+}
+
+@media (max-width: 992px) {
+  .why-body__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 0 0 30px 0;
+  }
 }
 
 .why-body-row {
@@ -783,8 +851,280 @@ header {
   letter-spacing: 2.5px;
 }
 
+@media (max-width: 992px) {
+  .why-body-item-body__title {
+    font-size: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-body-item-body__title {
+    margin: 0 0 6px 0;
+  }
+}
+
 .why-body-item-body__text {
   font-size: 15px;
   padding: 0 15px 0 0;
   line-height: 1.67;
+}
+
+@media (max-width: 768px) {
+  .why-body-item-body__text {
+    line-height: 1.4;
+    padding: 0 5px 0 0;
+  }
+}
+
+.contacts {
+  padding: 70px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 30px 0 0 0;
+  }
+}
+
+.contacts-title {
+  font-family: "Akzidenz-Grotesk";
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+@media (max-width: 768px) {
+  .contacts-title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+  }
+}
+
+.contacts-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-body__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px) {
+  .contacts-body__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 0 0 15px 0;
+  }
+}
+
+.contacts-body__item {
+  font-size: 15px;
+  line-height: 27px;
+  color: #000;
+  padding: 0 0 0 35px;
+  display: inline-block;
+}
+
+.contacts-body__item--1 {
+  background: url("/img/block_4/1.svg") left no-repeat;
+}
+
+.contacts-body__item--2 {
+  background: url("/img/block_4/2.svg") left no-repeat;
+}
+
+.contacts-body__item--3 {
+  background: url("/img/block_4/3.svg") left no-repeat;
+}
+
+.contacts-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts-social__item {
+  margin: 0 30px 0 0;
+}
+
+.contacts-social__item:last-child {
+  margin: 0 0 0 0;
+}
+
+.contacts-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #000;
+}
+
+@media (max-width: 768px) {
+  .contacts-content {
+    display: block;
+  }
+}
+
+.contacts-content__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  position: relative;
+}
+
+.contacts-content__map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.contacts-content__map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contacts-content__map {
+    height: 300px;
+    position: relative;
+  }
+}
+
+.contacts-content-form {
+  padding: 55px 60px;
+}
+
+@media (max-width: 768px) {
+  .contacts-content-form {
+    padding: 30px;
+  }
+}
+
+.contacts-content-form__title {
+  font-family: "Akzidenz-Grotesk";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin: 0 0 30px 0;
+}
+
+.contacts-content-form-body {
+  max-width: 375px;
+}
+
+@media (max-width: 768px) {
+  .contacts-content-form-body {
+    max-width: none;
+  }
+}
+
+.contacts-content-form-line {
+  margin: 0 0 25px 0;
+}
+
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 125px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-body {
+    height: 75px;
+  }
+}
+
+.footer-body__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+@media (max-width: 768px) {
+  .footer-body__column:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer-body__column:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.footer__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #4d4d4d;
+}
+
+.footer__text a {
+  text-decoration: underline;
+  color: #4d4d4d;
+}
+
+.footer__text a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer__text {
+    text-align: center;
+  }
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.footer__logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .footer__logo img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__logo img {
+    width: 100px;
+  }
 }
