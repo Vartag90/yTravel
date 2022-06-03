@@ -97,6 +97,9 @@ textarea.input {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	@media (max-width: $bp3) {
+		background-position: 80%;
+	}
 }
 
 //======</SUPORT>========
@@ -107,6 +110,8 @@ textarea.input {
 	position: absolute;
 	width: 100%;
 	z-index: 50;
+	top: 35px;
+	left: 0;
 	&__row {
 		display: flex;
 		justify-content: center;
@@ -120,6 +125,20 @@ textarea.input {
 		left: 50%;
 		top: 0;
 		transform: translate(-50%, 0px);
+		z-index: 2;
+		img {
+			@media (max-width: $bp3) {
+				width: 70%;
+
+				//left: 70%;
+			}
+		}
+		@media (max-width: $bp3) {
+			transform: translate(-35%, 0px);
+		}
+	}
+	@media (max-width: $bp3) {
+		top: 15px;
 	}
 }
 .menu {
@@ -128,16 +147,133 @@ textarea.input {
 	&__body {
 	}
 	&__list {
+		display: flex;
+		li {
+			position: relative;
+			padding: 0 37.5px;
+			&:nth-child(2) {
+				padding: 0 110px 0 37.5px;
+			}
+			&:nth-child(3) {
+				padding: 0 37.5px 0 110px;
+			}
+			&:after {
+				content: "";
+				width: 2px;
+				height: 2px;
+				background-color: #000;
+				border-radius: 50%;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin: -1.5px 0 0 0;
+			}
+			&:last-child,
+			&:nth-child(2) {
+				&:after {
+					display: none;
+				}
+			}
+		}
 	}
 	&__link {
-		color: #fff;
+		color: #000;
 		font-size: 13px;
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 2.6px;
 	}
+	@media (max-width: $bp3) {
+		&__body {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			top: -120%;
+			left: 0;
+			background-color: #ada9a9;
+			padding: 150px 0 20px 0;
+			transition: top 0.5s;
+			&.active {
+				top: 0;
+				transition: top 0.5s;
+			}
+		}
+		&__list {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			li {
+				padding: 0 0 45px 0;
+				&:nth-child(2),
+				&:nth-child(3) {
+					padding: 0 0 45px 0;
+					&:after {
+						display: block;
+					}
+				}
+				&:last-child {
+					padding: 0;
+				}
+				&:after {
+					width: 4px;
+					height: 4px;
+					background-color: #000;
+					right: 50%;
+					top: 40px;
+					margin: 0 -2px 0 0;
+				}
+			}
+		}
+		&__link {
+			color: #000;
+			font-size: 20px;
+		}
+	}
 }
 .icon-menu {
+	@media (max-width: $bp3) {
+		display: block;
+		position: absolute;
+		top: 24px;
+		right: 10px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			top: 8px;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			&:first-child {
+				top: 0px;
+				transition: top 1s;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+				transition: bottom 1s;
+			}
+		}
+		&.active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					transition: transform 1s;
+					top: 8px;
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					transition: transform 1s;
+					bottom: 8px;
+				}
+			}
+		}
+	}
 }
 
 //==========================================
@@ -167,7 +303,73 @@ textarea.input {
 	}
 }
 
-//==========================
+//======<BLOCK_1>===========
+
+.generation {
+	padding: 120px 0;
+	background-color: #f7f7f7;
+	@media (max-width: 900px) {
+		padding: 80px 0;
+	}
+	@media (max-width: 600px) {
+		padding: 30px 0;
+	}
+	&__block {
+	}
+}
+
+.block {
+	text-align: center;
+	&__icon {
+		margin: 0 0 30px 0;
+	}
+	&__title {
+		text-transform: uppercase;
+		color: #353738;
+		font-size: 18px;
+		letter-spacing: 3.6px;
+		font-weight: 700;
+		margin: 0 0 18px 0;
+		line-height: 24px;
+	}
+	&__text {
+		font-size: 18px;
+		line-height: 34px;
+		color: #848789;
+		&_j {
+		}
+	}
+}
+
+//======</BLOCK_1>==========
+
+//======<BLOCK_2>===========
+
+.brands {
+	&__row {
+		display: flex;
+	}
+	&__column {
+		flex: 0 1 33.333%;
+		&_b {
+			flex: 0 1 66.667%;
+		}
+	}
+	&__item {
+	}
+	&__content {
+	}
+	&__image {
+	}
+}
+.item {
+	&__logo {
+	}
+	&__image {
+	}
+}
+
+//======</BLOCK_2>==========
 
 //==========================
 
