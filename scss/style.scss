@@ -32,24 +32,23 @@ body {
 }
 
 //======<BUTTONS>=======
-.btn {
-    height: 50px;
-    line-height: 50px;
-    display: inline-block;
-    background-color: #000;
-    font-size: 15px;
-    font-family: "Bebas Neue";
-    padding: 0 33px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #fff;
-    &--w {
-        background-color: #fff;
-        color: #000;
-    }
-    &:hover {}
-}
-
+// .btn {
+//     height: 50px;
+//     line-height: 50px;
+//     display: inline-block;
+//     background-color: #000;
+//     font-size: 15px;
+//     font-family: "Bebas Neue";
+//     padding: 0 33px;
+//     text-transform: uppercase;
+//     letter-spacing: 1.5px;
+//     color: #fff;
+//     &--w {
+//         background-color: #fff;
+//         color: #000;
+//     }
+//     &:hover {}
+// }
 //======</BUTTONS>=======
 //======<SWIPER>=======
 //======</SWIPER>======
@@ -430,6 +429,14 @@ textarea.input {
         background-color: rgba($color: #64c29e, $alpha: 0.5);
         opacity: 0;
         visibility: hidden;
+        span {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 10px 0 0 0;
+        }
     }
     &__image {
         position: absolute;
@@ -453,20 +460,71 @@ textarea.input {
 
 //======</BLOCK_2/3/4>======
 //======<SLIDER>============
+.slider .container {
+    @media (min-width: 1400px) {
+        max-width: 1300px;
+    }
+    @media (max-width: 1400px) {
+        max-width: 1130px;
+    }
+    @media (max-width: 1100px) {
+        max-width: 800px;
+    }
+    @media (max-width: 992px) {
+        max-width: 800px;
+    }
+    @media (max-width: 768px) {
+        max-width: 600px;
+    }
+    @media (max-width: 650px) {
+        max-width: 450px;
+    }
+    @media (max-width: 500px) {
+        max-width: 320px;
+    }
+    margin: 0 auto;
+}
+
+$sliderWidth1: 1200px;
+$sliderWidth2: 900px;
+$sliderWidth3: 800px;
+$sliderWidth4: 700px;
+$sliderWidth5: 550px;
+$sliderWidth6: 400px;
+$sliderWidth7: 300px;
 .slider {
+    padding: 120px 0 60px 0;
+    position: relative;
     &__container {
-        width: 600px;
+        @media (min-width: 1400px) {
+            width: $sliderWidth1;
+        }
+        @media (max-width: 1400px) {
+            width: $sliderWidth2;
+        }
+        @media (max-width: 1100px) {
+            width: $sliderWidth3;
+        }
+        @media (max-width: 992px) {
+            width: $sliderWidth4;
+        }
+        @media (max-width: 768px) {
+            width: $sliderWidth5;
+        }
+        @media (max-width: 650px) {
+            width: $sliderWidth6;
+        }
+        @media (max-width: 500px) {
+            width: $sliderWidth7;
+        }
         overflow: hidden;
-        background-color: pink;
         margin: 0 auto;
     }
     &__body {
         display: flex;
-        background-color: yellow;
         transition: 0.2s;
     }
     &__item {
-        height: 400px;
         text-align: center;
     }
     &__icon {
@@ -481,6 +539,10 @@ textarea.input {
             font-weight: 300;
             color: #848789;
         }
+        @media (max-width: 500px) {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+        }
     }
     &__text {
         text-align: center;
@@ -488,14 +550,186 @@ textarea.input {
         line-height: 34px;
         color: #848789;
         font-style: italic;
+        padding: 0 35px;
+        @media (max-width: 768px) {
+            font-size: 18px;
+            line-height: 24px;
+            padding: 0 25px;
+        }
+        @media (max-width: 500px) {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 10px;
+        }
     }
     &__buttons {
         display: flex;
+        position: absolute;
+        @media (min-width: 1400px) {
+            width: $sliderWidth1;
+        }
+        @media (max-width: 1400px) {
+            width: $sliderWidth2;
+        }
+        @media (max-width: 1100px) {
+            width: $sliderWidth3;
+        }
+        @media (max-width: 992px) {
+            width: $sliderWidth4;
+        }
+        @media (max-width: 768px) {
+            width: $sliderWidth5;
+        }
+        @media (max-width: 650px) {
+            width: $sliderWidth6;
+        }
+        top: 60%;
+        @media (max-width: 1200px) {
+            top: 50%;
+        }
+        @media (max-width: 500px) {
+            width: $sliderWidth7;
+        }
+        .btn {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            transform: translateY(-50%) rotate(45deg);
+            &:hover {
+                border-color: #464444;
+            }
+        }
+        .btn-prev {
+            position: absolute;
+            left: -20px;
+            border-bottom: 3px solid #7c7979;
+            border-left: 3px solid #7c7979;
+        }
+        .btn-next {
+            position: absolute;
+            right: -20px;
+            border-top: 3px solid #7c7979;
+            border-right: 3px solid #7c7979;
+        }
+    }
+    .btns-radio {
+        @media (min-width: 1400px) {
+            width: $sliderWidth1;
+        }
+        @media (max-width: 1400px) {
+            width: $sliderWidth2;
+        }
+        @media (max-width: 1100px) {
+            width: $sliderWidth3;
+        }
+        @media (max-width: 992px) {
+            width: $sliderWidth4;
+        }
+        @media (max-width: 768px) {
+            width: $sliderWidth5;
+        }
+        @media (max-width: 650px) {
+            width: $sliderWidth6;
+        }
+        @media (max-width: 500px) {
+            width: $sliderWidth7;
+        }
+        margin: 10px auto 0 auto;
+        display: flex;
         justify-content: center;
+        input:not(:last-child) {
+            margin: 0 10px 0 0;
+        }
+    }
+    @media (max-width: 1100px) {
+        padding: 80px 0 40px 0;
+    }
+    @media (max-width: 768px) {
+        padding: 50px 0 30px 0;
+    }
+    @media (max-width: 650px) {
+        padding: 30px 0 20px 0;
     }
 }
 
 //======</SLIDER>===========
+//======<BLOCK_6>===========
+.shop {
+    &__body {
+        display: flex;
+        @media (max-width: 1100px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__column {
+        flex: 0 1 16.666%;
+        &_b {
+            flex: 0 1 33.333%;
+        }
+        @media (max-width: 1100px) {
+            flex: 0 1 50%;
+        }
+        &:first-child,
+        &:last-child {
+            @media (max-width: 1100px) {
+                flex: 0 1 100%;
+            }
+        }
+    }
+    &__block {}
+    &__footer {
+        background-color: #282f35;
+        padding: 60px 0;
+        text-align: center;
+        @media (max-width: 1100px) {
+            padding: 40px 0;
+        }
+    }
+    &__btn {
+        padding: 0 60px;
+        height: 50px;
+        line-height: 48px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+        display: inline-block;
+        border: 1px solid rgba($color: #fff, $alpha: 0.5);
+        @media (max-width: 1100px) {
+            padding: 0 20px;
+        }
+    }
+}
+
+.block-shop {
+    height: 100%;
+    &__row {
+        display: flex;
+    }
+    &__column {
+        flex: 0 1 50%;
+    }
+    &__item {
+        height: auto;
+        padding: 0 0 50% 0;
+        &_b {
+            padding: 0 0 200.5% 0;
+        }
+        &_l {
+            padding: 0 0 100.5% 0;
+        }
+        .item__logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+}
+
+//======</BLOCK_6>==========
 //==========================
 //======</MAIN BLOCK>=======
 //======<FOOTER>============
