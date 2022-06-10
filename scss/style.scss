@@ -730,7 +730,133 @@ $sliderWidth7: 300px;
 }
 
 //======</BLOCK_6>==========
-//==========================
+//======<BLOCK_7>===========
+.subscribe {
+    &__body {
+        padding: 110px 0;
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        @media (max-width: 768px) {
+            padding: 50px 0;
+        }
+    }
+    &__logo {
+        margin: 0 0 39px 0;
+    }
+    &__label {
+        color: #848789;
+        font-size: 24px;
+        font-style: italic;
+        margin: 0 0 35px 0;
+    }
+    &__form {
+        display: flex;
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+    &__input {
+        flex: 1 1 auto;
+        padding: 0 8px 0 0;
+        .input {
+            width: 100%;
+            height: 69px;
+            border: 1px solid #d3d7d9;
+            background-color: #fff;
+            padding: 0 28px;
+            color: #929292;
+            font-size: 20px;
+            font-style: italic;
+            &.focus {
+                font-style: normal;
+                color: #333;
+            }
+            &.err {
+                border: 1px solid red;
+            }
+        }
+        @media (max-width: 768px) {
+            padding: 0 0 15px 0;
+        }
+    }
+    &__button {
+        flex: 0 0 250px;
+    }
+    &__btn {
+        width: 250px;
+        height: 69px;
+        font-size: 24px;
+        line-height: 69px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        background-color: #64c29e;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+
+//======</BLOCK_7>===========
 //======</MAIN BLOCK>=======
 //======<FOOTER>============
+.footer {
+    background-color: #f7f7f7;
+    &__row {
+        display: flex;
+        align-items: center;
+        background-color: #f7f7f7;
+        padding: 100px 0;
+        @media (max-width: 1100px) {
+            padding: 50px 0;
+        }
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            padding: 30px 0;
+        }
+    }
+    &__column {
+        flex: 0 1 33.333%;
+    }
+    &__address {
+        color: #848789;
+        font-size: 14px;
+        line-height: 18px;
+        p {
+            &:first-child {
+                font-weight: 700;
+            }
+        }
+    }
+    &__social {}
+    &__dev {}
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__link {
+        margin: 0 7.5px;
+    }
+    @media (max-width: 768px) {
+        margin: 15px 0;
+    }
+}
+
+.dev {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__text {
+        color: #848789;
+        font-size: 14px;
+        font-style: italic;
+        padding: 0 9px 0 0;
+    }
+    &__icon {}
+}
+
 //======</FOOTER>===========
