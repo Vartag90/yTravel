@@ -1256,3 +1256,7 @@ textarea.input {
   font-style: italic;
   padding: 0 5px 0 0;
 }
+
+.dev__icon img {
+  width: 60px;
+}

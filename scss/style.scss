@@ -878,7 +878,11 @@ $sliderWidth7: 300px;
         font-style: italic;
         padding: 0 5px 0 0;
     }
-    &__icon {}
+    &__icon {
+        img {
+            width: 60px;
+        }
+    }
 }
 
 //======</FOOTER>===========
