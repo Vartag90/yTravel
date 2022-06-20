@@ -1,53 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
+    <title>yTravel</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <style>body{opacity: 0;}</style> -->
+    <link rel="stylesheet" href="css/style.min.css?_v=20220620145126">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Travel</title>
 </head>
 
 <body>
-
-
     <div class="wrapper">
         <main class="page">
             <header class="header">
                 <div class="header__row">
-                    <nav class="header__menu menu">
-                        <div class="menu__icon icon-menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="menu__body">
+                    <div class="header__menu menu">
+                        <button type="button" class="menu__icon icon-menu"><span></span></button>
+                        <nav class="menu__body">
                             <ul class="menu__list">
-                                <li><a href="" class="menu__link">about us</a></li>
-                                <li><a href="" class="menu__link">travel</a></li>
-                                <li><a href="" class="menu__link">discovery</a></li>
-                                <li><a href="" class="menu__link">contact</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">about us</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">travel</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">discovery</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">contact</a></li>
                             </ul>
-                        </div>
-                    </nav>
-                    <div class="header__logo"><img src="img/logo2.png" alt=""></div>
+                        </nav>
+                    </div>
+                    <div class="header__logo">
+                        <picture>
+                            <source srcset="img/logo3.webp" type="image/webp"><img src="img/logo3.png" alt="main_logo">
+                        </picture>
+                    </div>
                 </div>
             </header>
-
             <div class="main-screen">
                 <div class="main-screen__bg ibg">
-                    <img src="img/bg_main1.jpg" alt="">
+                    <picture>
+                        <source srcset="img/bg_main1.webp" type="image/webp"><img src="img/bg_main1.jpg" alt="main_background">
+                    </picture>
                 </div>
             </div>
-
             <div class="content">
                 <section class="generation">
-                    <div class="container">
+                    <div class="generation__container">
                         <div class="generation__block block">
                             <div class="block__icon">
-                                <img src="img/Block_1/icons/01.png" alt="">
+                                <picture>
+                                    <source srcset="img/Block_1/icons/01.webp" type="image/webp"><img src="img/Block_1/icons/01.png" alt="plane">
+                                </picture>
                             </div>
                             <h1 class="block__title">discover the world</h1>
                             <div class="block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eveniet voluptatibus minima doloremque asperiores repellendus, recusandae consequuntur, consequatur atque laborum debitis qui vel dolorem consectetur ullam quas
@@ -61,18 +63,25 @@
                             <a href="" class="brands__item item">
                                 <span class="item__logo logo">
 									<span class="logo__title">Thailand</span>
-                                <img src="img/Block_2/icons/01.png" alt="">
+                                <picture>
+                                    <source srcset="img/Block_2/icons/01.webp" type="image/webp"><img src="img/Block_2/icons/01.png" alt="islands">
+                                </picture>
                                 <span class="logo__details">More details...</span>
                                 </span>
                                 <span class="item__image ibg">
-									<img src="img/Block_2/bg.jpeg" alt="">
+									<picture>
+										<source srcset="img/Block_2/bg.webp" type="image/webp"><img src="img/Block_2/bg.jpeg"
+											alt="Thailand">
+									</picture>
 								</span>
                             </a>
                         </div>
                         <div class="brands__column">
                             <div class="brands__content block">
                                 <div class="block__icon logo">
-                                    <img src="img/Block_2/icons/02.png" alt="">
+                                    <picture>
+                                        <source srcset="img/Block_2/icons/02.webp" type="image/webp"><img src="img/Block_2/icons/02.png" alt="bag">
+                                    </picture>
                                 </div>
                                 <h2 class="block__title">mysterious thailand</h2>
                                 <div class="block__text block__text_j">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eveniet voluptatibus minima doloremque asperiores repellendus, recusandae consequuntur, consequatur atque laborum debitis qui vel dolorem consectetur ullam
@@ -80,7 +89,9 @@
                                 </div>
                             </div>
                             <div class="brands__image ibg">
-                                <img src="img/Block_2/01.jpg" alt="">
+                                <picture>
+                                    <source srcset="img/Block_2/01.webp" type="image/webp"><img src="img/Block_2/01.jpg" alt="Thailand">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -91,18 +102,24 @@
                             <a href="" class="brands__item item">
                                 <span class="item__logo logo">
 									<span class="logo__title">Maldives</span>
-                                <img src="img/Block_3/icons/02.png" alt="">
+                                <picture>
+                                    <source srcset="img/Block_3/icons/02.webp" type="image/webp"><img src="img/Block_3/icons/02.png" alt="glasses">
+                                </picture>
                                 <span class="logo__details">More details...</span>
                                 </span>
                                 <span class="item__image ibg">
-									<img src="img/Block_3/01.jpg" alt="">
+									<picture>
+										<source srcset="img/Block_3/01.webp" type="image/webp"><img src="img/Block_3/01.jpg" alt="">
+									</picture>
 								</span>
                             </a>
                         </div>
                         <div class="brands__column">
                             <div class="brands__content block">
                                 <div class="block__icon">
-                                    <img src="img/Block_3/icons/01.png" alt="">
+                                    <picture>
+                                        <source srcset="img/Block_3/icons/01.webp" type="image/webp"><img src="img/Block_3/icons/01.png" alt="tickets">
+                                    </picture>
                                 </div>
                                 <h2 class="block__title">romantic maldives</h2>
                                 <div class="block__text block__text_j">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eveniet voluptatibus minima doloremque asperiores repellendus, recusandae consequuntur, consequatur atque laborum debitis qui vel dolorem consectetur ullam
@@ -110,7 +127,9 @@
                                 </div>
                             </div>
                             <div class="brands__image ibg">
-                                <img src="img/Block_3/02.jpg" alt="">
+                                <picture>
+                                    <source srcset="img/Block_3/02.webp" type="image/webp"><img src="img/Block_3/02.jpg" alt="maldives">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -121,18 +140,24 @@
                             <a href="" class="brands__item item">
                                 <span class="item__logo logo">
 									<span class="logo__title">Greece</span>
-                                <img src="img/Block_4/icons/01.png" alt="">
+                                <picture>
+                                    <source srcset="img/Block_4/icons/01.webp" type="image/webp"><img src="img/Block_4/icons/01.png" alt="mountains">
+                                </picture>
                                 <span class="logo__details">More details...</span>
                                 </span>
                                 <span class="item__image ibg">
-									<img src="img/Block_4/01.jpg" alt="">
+									<picture>
+										<source srcset="img/Block_4/01.webp" type="image/webp"><img src="img/Block_4/01.jpg" alt="greece">
+									</picture>
 								</span>
                             </a>
                         </div>
                         <div class="brands__column">
                             <div class="brands__content block">
                                 <div class="block__icon">
-                                    <img src="img/Block_4/icons/03.png" alt="">
+                                    <picture>
+                                        <source srcset="img/Block_4/icons/03.webp" type="image/webp"><img src="img/Block_4/icons/03.png" alt="trinket">
+                                    </picture>
                                 </div>
                                 <h2 class="block__title">attractive greece</h2>
                                 <div class="block__text block__text_j">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eveniet voluptatibus minima doloremque asperiores repellendus, recusandae consequuntur, consequatur atque laborum debitis qui vel dolorem consectetur ullam
@@ -140,101 +165,53 @@
                                 </div>
                             </div>
                             <div class="brands__image ibg brands__elem_hidden">
-                                <img src="img/Block_4/04.jpg" alt="">
+                                <picture>
+                                    <source srcset="img/Block_4/04.webp" type="image/webp"><img src="img/Block_4/04.jpg" alt="greece">
+                                </picture>
                             </div>
                         </div>
                         <div class="brands__column">
                             <a href="" class="brands__item item">
                                 <span class="item__logo logo">
 									<span class="logo__title">Athena</span>
-                                <img src="img/Block_4/icons/04.png" alt="">
+                                <picture>
+                                    <source srcset="img/Block_4/icons/04.webp" type="image/webp"><img src="img/Block_4/icons/04.png" alt="icon_boat">
+                                </picture>
                                 <span class="logo__details">More details...</span>
                                 </span>
                                 <span class="item__image ibg">
-									<img src="img/Block_4/03.jpg" alt="">
+									<picture>
+										<source srcset="img/Block_4/03.webp" type="image/webp"><img src="img/Block_4/03.jpg" alt="Athena">
+									</picture>
 								</span>
                             </a>
                         </div>
                     </div>
                 </section>
-                <section class="slider">
-                    <div class="container">
-                        <div class="slider__container">
-                            <div class="slider__body">
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">111AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">222AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora assumenda non. Veniam natus harum ea autem explicabo eligendi aliquam, fugit laudantium voluptates eveniet inventore provident architecto porro non
-                                        ut officia, vitae itaque, dicta ducimus reprehenderit rem incidunt voluptatum expedita. Sapiente voluptatem ea blanditiis animi qui laboriosam exercitationem ducimus nobis?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">333AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">444AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">555AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora assumenda non. Veniam natus harum ea autem explicabo eligendi aliquam, fugit laudantium voluptates eveniet inventore provident architecto porro non
-                                        ut officia, vitae itaque, dicta ducimus reprehenderit rem incidunt voluptatum expedita. Sapiente voluptatem ea blanditiis animi qui laboriosam exercitationem ducimus nobis?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">666AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">777AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">888AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora assumenda non. Veniam natus harum ea autem explicabo eligendi aliquam, fugit laudantium voluptates eveniet inventore provident architecto porro non
-                                        ut officia, vitae itaque, dicta ducimus reprehenderit rem incidunt voluptatum expedita. Sapiente voluptatem ea blanditiis animi qui laboriosam exercitationem ducimus nobis?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">999AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">101010AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">111111AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__icon"><img src="img/Block_5/icons/01.png" alt=""></div>
-                                    <h3 class="slider__title">121212AOD New York @aod <span>/ 35 min</span></h3>
-                                    <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
-                                </div>
-                            </div>
-                            <div class="slider__buttons">
-                                <div class="btn-prev btn"></div>
-                                <div class="btn-next btn"></div>
-                            </div>
+                <section class="offers offers__slider swiper">
+                    <div class="offers__wrapper swiper-wrapper">
+                        <div class="offers__slide swiper-slide">
+                            <div class="slider__icon"><img src="img/Block_5/icons/01.svg" alt="twitter_icon"></div>
+                            <h3 class="slider__title">Slide 1 <span>/ offer</span></h3>
+                            <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
                         </div>
-                        <form action="#" class="btns-radio"></form>
+                        <div class="offers__slide swiper-slide">
+                            <div class="slider__icon"><img src="img/Block_5/icons/01.svg" alt="twitter_icon"></div>
+                            <h3 class="slider__title">Slide 2 <span>/ offer</span></h3>
+                            <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
+                        </div>
+                        <div class="offers__slide swiper-slide">
+                            <div class="slider__icon"><img src="img/Block_5/icons/01.svg" alt="twitter_icon"></div>
+                            <h3 class="slider__title">Slide 3 <span>/ offer</span></h3>
+                            <h3 class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit veritatis delectus possimus beatae quis culpa quidem, optio saepe. Quasi vitae commodi quos quod eaque praesentium natus minima sit doloribus maiores?</h3>
+                        </div>
                     </div>
-
+                    <div class="offers__buttons">
+                        <div class="swiper-button-prev btn btn__prev"></div>
+                        <div class="swiper-button-next btn btn__next"></div>
+                    </div>
                 </section>
-                <div class="shop">
+                <section class="shop">
                     <div class="shop__body">
                         <div class="shop__column shop__column_b">
                             <div class="shop__block block-shop">
@@ -243,11 +220,16 @@
                                         <a href="" class="block-shop__item block-shop__item_l item">
                                             <span class="item__logo logo">
 												<span class="logo__title">Turkey</span>
-                                            <img src="img/Block_6/icons/01.png" alt="">
+                                            <picture>
+                                                <source srcset="img/Block_6/icons/01.webp" type="image/webp"><img src="img/Block_6/icons/01.png" alt="">
+                                            </picture>
                                             <span class="logo__details">More details...</span>
                                             </span>
                                             <span class="item__image ibg">
-												<img src="img/Block_6/01.jpg" alt="">
+												<picture>
+													<source srcset="img/Block_6/01.webp" type="image/webp"><img src="img/Block_6/01.jpg"
+														alt="Turkey">
+												</picture>
 											</span>
                                         </a>
                                     </div>
@@ -255,11 +237,16 @@
                                         <a href="" class="block-shop__item block-shop__item_l item">
                                             <span class="item__logo logo">
 												<span class="logo__title">Canary</span>
-                                            <img src="img/Block_6/icons/02.png" alt="">
+                                            <picture>
+                                                <source srcset="img/Block_6/icons/02.webp" type="image/webp"><img src="img/Block_6/icons/02.png" alt="">
+                                            </picture>
                                             <span class="logo__details">More details...</span>
                                             </span>
                                             <span class="item__image ibg">
-												<img src="img/Block_6/02.jpg" alt="">
+												<picture>
+													<source srcset="img/Block_6/02.webp" type="image/webp"><img src="img/Block_6/02.jpg"
+														alt="Canary">
+												</picture>
 											</span>
                                         </a>
                                     </div>
@@ -267,11 +254,15 @@
                                 <a href="" class="block-shop__item item">
                                     <span class="item__logo item__logo_p logo">
 										<span class="logo__title">Bali</span>
-                                    <img src="img/Block_6/icons/03.png" alt="">
+                                    <picture>
+                                        <source srcset="img/Block_6/icons/03.webp" type="image/webp"><img src="img/Block_6/icons/03.png" alt="">
+                                    </picture>
                                     <span class="logo__details">More details...</span>
                                     </span>
                                     <span class="item__image ibg">
-										<img src="img/Block_6/03.webp" alt="">
+										<picture>
+											<source srcset="img/Block_6/03.webp" type="image/webp"><img src="img/Block_6/03.webp" alt="Bali">
+										</picture>
 									</span>
                                 </a>
                             </div>
@@ -280,11 +271,16 @@
                             <a href="" class="block-shop__item block-shop__item_b item">
                                 <span class="item__logo logo">
 									<span class="logo__title">Philippines</span>
-                                <img src="img/Block_6/icons/04.png" alt="">
+                                <picture>
+                                    <source srcset="img/Block_6/icons/04.webp" type="image/webp"><img src="img/Block_6/icons/04.png" alt="">
+                                </picture>
                                 <span class="logo__details">More details...</span>
                                 </span>
                                 <span class="item__image ibg">
-									<img src="img/Block_6/04.jpg" alt="">
+									<picture>
+										<source srcset="img/Block_6/04.webp" type="image/webp"><img src="img/Block_6/04.jpg"
+											alt="Philippines">
+									</picture>
 								</span>
                             </a>
 
@@ -293,11 +289,16 @@
                             <a href="" class="block-shop__item block-shop__item_b item">
                                 <span class="item__logo logo">
 									<span class="logo__title">Montenegro</span>
-                                <img src="img/Block_6/icons/05.png" alt="">
+                                <picture>
+                                    <source srcset="img/Block_6/icons/05.webp" type="image/webp"><img src="img/Block_6/icons/05.png" alt="">
+                                </picture>
                                 <span class="logo__details">More details...</span>
                                 </span>
                                 <span class="item__image ibg">
-									<img src="img/Block_6/05.jpg" alt="">
+									<picture>
+										<source srcset="img/Block_6/05.webp" type="image/webp"><img src="img/Block_6/05.jpg"
+											alt="Montenegro">
+									</picture>
 								</span>
                             </a>
 
@@ -307,11 +308,16 @@
                                 <a href="" class="block-shop__item item">
                                     <span class="item__logo item__logo_p logo">
 										<span class="logo__title">Albania</span>
-                                    <img src="img/Block_6/icons/06.png" alt="">
+                                    <picture>
+                                        <source srcset="img/Block_6/icons/06.webp" type="image/webp"><img src="img/Block_6/icons/06.png" alt="">
+                                    </picture>
                                     <span class="logo__details">More details...</span>
                                     </span>
                                     <span class="item__image ibg">
-										<img src="img/Block_6/06.jpg" alt="">
+										<picture>
+											<source srcset="img/Block_6/06.webp" type="image/webp"><img src="img/Block_6/06.jpg"
+												alt="Albania">
+										</picture>
 									</span>
                                 </a>
                                 <div class="block-shop__row">
@@ -320,11 +326,16 @@
                                         <a href="" class="block-shop__item block-shop__item_l item">
                                             <span class="item__logo logo">
 												<span class="logo__title">Malta</span>
-                                            <img src="img/Block_6/icons/07.png" alt="">
+                                            <picture>
+                                                <source srcset="img/Block_6/icons/07.webp" type="image/webp"><img src="img/Block_6/icons/07.png" alt="">
+                                            </picture>
                                             <span class="logo__details">More details...</span>
                                             </span>
                                             <span class="item__image ibg">
-												<img src="img/Block_6/07.jpg" alt="">
+												<picture>
+													<source srcset="img/Block_6/07.webp" type="image/webp"><img src="img/Block_6/07.jpg"
+														alt="Malta">
+												</picture>
 											</span>
                                         </a>
                                     </div>
@@ -334,11 +345,16 @@
 
                                             <span class="item__logo logo">
 												<span class="logo__title">Bulgary</span>
-                                            <img src="img/Block_6/icons/08.png" alt="">
+                                            <picture>
+                                                <source srcset="img/Block_6/icons/08.webp" type="image/webp"><img src="img/Block_6/icons/08.png" alt="">
+                                            </picture>
                                             <span class="logo__details">More details...</span>
                                             </span>
                                             <span class="item__image ibg">
-												<img src="img/Block_6/08.jpg" alt="">
+												<picture>
+													<source srcset="img/Block_6/08.webp" type="image/webp"><img src="img/Block_6/08.jpg"
+														alt="Bulgary">
+												</picture>
 											</span>
                                         </a>
                                     </div>
@@ -351,15 +367,17 @@
                             <a href="" class="shop__btn">show all destinations</a>
                         </div>
                     </div>
-                </div>
-                <div class="subscribe">
+                </section>
+                <section class="subscribe">
                     <div class="container">
                         <div class="subscribe__body">
                             <div class="subscribe__logo">
-                                <img src="img/logo2.png" alt="">
+                                <picture>
+                                    <source srcset="img/logo3.webp" type="image/webp"><img src="img/logo3.png" alt="main_logo">
+                                </picture>
                             </div>
                             <div class="subscribe__label">
-                                Lorem ipsum dolor sit.
+                                Stay up to date with hot deals.
                             </div>
                             <form action="#" class="subscribe__form">
                                 <div class="subscribe__input">
@@ -371,35 +389,41 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
             <footer class="footer">
-                <div class="container">
+                <div class="footer__container">
                     <div class="footer__row">
                         <div class="footer__column">
                             <div class="footer__address">
-                                <p>AOD New York</p>
-                                <p>2250 Lexington Avenue</p>
-                                <p>New York, NY 10035 - info@domain.com</p>
+                                <p>City</p>
+                                <p>1234 Street</p>
+                                <p>City, BO 12354 - info@domain.com</p>
                             </div>
                         </div>
                         <div class="footer__column">
                             <div class="footer__social social">
                                 <a href="" class="social__link">
-                                    <img src="img/Footer/icons/01.png" alt="">
+                                    <picture>
+                                        <source srcset="img/Footer/icons/01.webp" type="image/webp"><img src="img/Footer/icons/01.png" alt="twitter_icon_2">
+                                    </picture>
                                 </a>
                                 <a href="" class="social__link">
-                                    <img src="img/Footer/icons/02.png" alt="">
+                                    <picture>
+                                        <source srcset="img/Footer/icons/02.webp" type="image/webp"><img src="img/Footer/icons/02.png" alt="facebook_icon">
+                                    </picture>
                                 </a>
                                 <a href="" class="social__link">
-                                    <img src="img/Footer/icons/03.png" alt="">
+                                    <picture>
+                                        <source srcset="img/Footer/icons/03.webp" type="image/webp"><img src="img/Footer/icons/03.png" alt="telegram_icon">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
                         <div class="footer__column">
                             <a href="#" class="footer__dev dev">
                                 <span class="dev__text">Handcrafted by</span>
-                                <span class="dev__icon"><img src="img/dev.svg" alt=""></span>
+                                <span class="dev__icon"><img src="img/dev.svg" alt="author_logo"></span>
                             </a>
                         </div>
                     </div>
@@ -407,12 +431,17 @@
             </footer>
         </main>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/responsive.js"></script>
-    <script src="js/inputPlaceholder.js"></script>
-
-
-
+    <!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+    <script src="js/app.min.js?_v=20220620145126"></script>
 </body>
 
 </html>
