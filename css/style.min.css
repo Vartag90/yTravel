@@ -935,9 +935,9 @@ textarea.input {
         width: 70%
     }
     .header__logo {
-        -webkit-transform: translate(-40%, 0);
-        -ms-transform: translate(-40%, 0);
-        transform: translate(-40%, 0)
+        -webkit-transform: translate(-34%, 0);
+        -ms-transform: translate(-34%, 0);
+        transform: translate(-34%, 0)
     }
     .header {
         top: .9375rem
